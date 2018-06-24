@@ -1,9 +1,13 @@
 const { FizzBuzz } = require('./spec.helper')
 
 describe('Fizz Buzz', () => {
-
-    it('returns number if no game rules are met', () => {
-        let fizzBuzz = new FizzBuzz
+    let fizzBuzz = new FizzBuzz
+    
+    it('returns number if no game rules are met', () => {    
         expect(fizzBuzz.check(1)).to.eql(1)
+    })
+
+    it('return fizz if number is divisable by three', () => {
+        expect(fizzBuzz.check(3)).to.eql('Fizz')
     })
 })
