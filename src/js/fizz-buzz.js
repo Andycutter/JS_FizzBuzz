@@ -1,12 +1,16 @@
 function FizzBuzz() {
+    const hasZeroLeft = (number, divider) => {
+        return (number % divider) === 0;
+    }
+    
     this.check = (number) => {
-        if (number % 15 === 0) {
+        if (hasZeroLeft(number, 15)) {
             return('Fizz Buzz')
         }   else if 
-            (number % 3 === 0) {
+            (hasZeroLeft(number, 3)) {
             return('Fizz')
         }   else if  
-            (number % 5 === 0) {
+            (hasZeroLeft(number, 5)) {
             return('Buzz')
         }   else {           
             return number;
