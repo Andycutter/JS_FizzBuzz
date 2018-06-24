@@ -10,4 +10,8 @@ describe('Fizz Buzz', () => {
     it('return fizz if number is divisable by three', () => {
         expect(fizzBuzz.check(3)).to.eql('Fizz')
     })
+    it ('returns buzz if number is divisable by five', () => {
+        expect(fizzBuzz.check(10)).to.eql('Buzz')
+    })
+
 })
